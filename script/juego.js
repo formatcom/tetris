@@ -337,27 +337,11 @@ function colision(xi, gi){
 }
 
 function guardarP(pts, nickname) {
-    var direccion = "script/consultas/consultas.php?id=1&pts="+pts+"&nickname="+nickname;
-    $.ajax({
-        url: direccion,
-        success: function(data){
-        },
-        error: function(){ alert('error 404'); }
-    });
+    console.log('solo en modo produccion');
 }
 
 function MostrarR() {
-    var direccion = "script/consultas/consultas.php?id=2";
-    $.ajax({
-        url: direccion,
-        dataType: 'JSON',
-        success: function(data){
-            Record.nickname = data.nickname;
-            Record.puntos = data.puntos;
-            document.getElementById("record").innerHTML='<ul><li>'+Record.nickname+'</li><li>'+Record.puntos+'</li></ul>';
-        },
-        error: function(){ alert('error 404'); }
-    });
+    console.log('solo en modo produccion');
 }
 
 
