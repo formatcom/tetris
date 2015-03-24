@@ -337,7 +337,7 @@ function colision(xi, gi){
 }
 
 function guardarP(pts, nickname) {
-    var direccion = "script/consultas/consultas.php?id=1&pts="+pts+"&nickname="+nickname;
+    var direccion = "http://formatcom.netii.net/tetris/script/consultas/consultas.php?id=1&pts="+pts+"&nickname="+nickname;
     $.ajax({
         url: direccion,
         success: function(data){
@@ -347,7 +347,7 @@ function guardarP(pts, nickname) {
 }
 
 function MostrarR() {
-    var direccion = "script/consultas/consultas.php?id=2";
+    var direccion = "http://formatcom.netii.net/tetris/script/consultas/consultas.php?id=2";
     $.ajax({
         url: direccion,
         dataType: 'JSON',
