@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>NeoTetris HTML5</title>
+
+    <link rel="icon" type="image/png" href="imagenes/icono.png" />
+    <!-- Esto llama la hoja de estilo -->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <!-- libreria Jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <!-- tu programacion javascript -->
+    <script type="text/javascript" src="script/cargando.js"></script>
+    <script type="text/javascript" src="script/gameover.js"></script>
+    <script type="text/javascript" src="script/figuras.js"></script>
+    <script type="text/javascript" src="script/tablero.js"></script>
+    <script type="text/javascript" src="script/globales.js"></script>
+    <script type="text/javascript" src="script/almacen.js"></script>
+    <script type="text/javascript" src="script/imagenes.js"></script>
+    <script type="text/javascript" src="script/contador.js"></script>
+    <script type="text/javascript" src="script/juego.js"></script>
+    <script type="text/javascript" src="script/pause.js"></script>
+    <script type="text/javascript" src="script/presentacion.js"></script>
+    <script type="text/javascript" src="script/menu.js"></script>
+    
+</head>
+<body>
+    <div id="recordo"></div>
+    <div id="contenido">
+    <div id="visor">
+        <div id="interfaz"></div>
+        <div id="contexto">
+        <div id="menuIzq">
+            <div id="nivel"><label></label></div>
+            <div id="puntos"><label></label></div>
+            <div id="lineas"><label></label></div>
+        </div>
+        <canvas id="myCanvas">Tu navegador no soporta canvas.</canvas>
+        <div id="menuDer">
+            <div id="figura">
+                <div id="letra"></div>
+            </div>
+            <div id="record"> 
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div id="log"></div>
+    <script type="text/javascript" src="script/gameloop.js"></script>
+</body>
+</html>

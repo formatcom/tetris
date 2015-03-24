@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'fuente';
+    src: url('../font/Heavy.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #000 url("../imagenes/fondo.png") repeat;
+}
+#contenido{
+    width: 100%;
+}
+.emergente{
+    top: 0;
+    background: rgba(0,0,0,.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 2;
+}
+#formulario{
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    background: rgba(255,255,255,.7);
+}
+#visor{
+    width: 1024px;
+    height: 768px;
+    margin: auto;
+    overflow: hidden; 
+}
+#interfaz{
+    width: 1024px;
+    height: 2304px;
+}
+#menuIzq{
+    width: 313px;
+    height: 370px;
+    float: left;
+    padding-top: 275px;
+}
+#menuDer{
+    width: 209px;
+    height: 600px;
+    float: left;
+    padding-top: 312px;
+}
+#myCanvas{
+    margin: 170px 8px;
+    float: left;
+}
+#nivel{
+    width: 140px;
+    height: 65px;
+    margin-left: 140px;
+    text-align: center;
+}
+#nivel label{
+    font-family: fuente;
+    color: #FFF;
+    font-size: 48pt;
+}
+#puntos{
+    width: 140px;
+    height: 60px;
+    margin: 80px 135px;
+    text-align: right;
+}
+#puntos label{
+    font-family: fuente;
+    color: #FFF;
+    font-size: 36pt;
+}
+#lineas{
+    width: 140px;
+    height: 60px;
+    margin: 90px 135px;
+    text-align: right;
+}
+#lineas label{
+    font-family: fuente;
+    color: #FFF;
+    font-size: 36pt;
+}
+#figura{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;
+    overflow: hidden;
+}
+#letra{
+    width: 700px;
+    height: 100px;
+}
+#record{
+    margin: 100px 18px 0 20px;
+    width: 170px;
+    height: 100px;
+    font-family: fuente;
+    text-align: right;
+    color: #FFF;
+}
+
+#record ul{
+    font-size: 36pt;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#record li:first-child {
+    font-size: 14pt;
+}
